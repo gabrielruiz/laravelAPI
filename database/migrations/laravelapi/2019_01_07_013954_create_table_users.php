@@ -14,7 +14,7 @@ class CreateTableUsers extends Migration
     public function up()
     {
         Schema::create('clrapi_users', function (Blueprint $table) {
-            $table->increments('id');
+            $table->increments('uid');
             $table->string('name');
             $table->string('lastname');
             $table->timestamps();
