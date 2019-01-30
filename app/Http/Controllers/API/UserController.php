@@ -59,7 +59,9 @@ class UserController extends Controller
     {
         //Solicitamos al modelo Users con el id solicitado por GET.
         //return Users::where('id', $id)->get();
-        return Users::find($id);
+        $users = Users::find($id);
+        if(!$users) return $this->noFoundMsg();
+        return $users;
     }
 
     /**
