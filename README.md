@@ -8,9 +8,9 @@ composer install
 
 LARAVEL COMMANDS (Always in the root folder):
 
-*Run the application (if it works you can browser this URL http://127.0.0.1:8000):
+*Run the application (if it works you can browser this URL http://127.0.0.1:8000. If you want another port use --port=[your-port-number]):
 
-php arisan serve
+php artisan serve
 
 *Command to create test migration tables:
 
